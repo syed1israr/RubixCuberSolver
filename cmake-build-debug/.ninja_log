@@ -1,3 +1,4 @@
 # ninja log v6
 29	3707	7541900374624011	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
 3710	3869	7541900411430774	RubixCuberSolver.exe	cb93609d991c69a2
+119	5656	7542228672768140	CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj	277c03867f8c5a46

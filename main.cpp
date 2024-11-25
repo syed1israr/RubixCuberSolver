@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include "Generic_Rubix_Cube_Solver.h"
 int main() {
-    cout<<"Hello World"<<endl;
+    Generic_Rubix_Cube_Solver solver;
+    solver.randomShuffleCube(5);
+    solver.print();
     return 0;
-
 }

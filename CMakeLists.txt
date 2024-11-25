@@ -4,5 +4,6 @@ project(RubixCuberSolver)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(RubixCuberSolver main.cpp
-        GenericRubixCube.cpp
-        GenericRubixCube.h)
+        Generic_Rubix_Cube_Solver.cpp
+        Generic_Rubix_Cube_Solver.h
+)
