@@ -8,4 +8,5 @@ add_executable(RubixCuberSolver main.cpp
         Generic_Rubix_Cube_Solver.h
         Rubiks3DRepresentation.cpp
         Rubiks1DRepresentation.cpp
+        RubiksBitBoardRepresentation.cpp
 )
