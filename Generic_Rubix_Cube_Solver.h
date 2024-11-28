@@ -41,7 +41,7 @@ public:
 
     virtual bool isSolved() const = 0;
 
-    char getColorLetter(COLOR color);
+    static char getColorLetter(COLOR color);
 
     static string getMove(MOVE ind);
     void print() ;
