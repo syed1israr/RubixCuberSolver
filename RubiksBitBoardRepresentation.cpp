@@ -335,7 +335,7 @@ public:
 
         return ret;
     }
-
+    //asda
     struct HashBitboard {
         size_t operator()(const RubiksBitBoardRepresentation &r1) const {
             uint64_t final_hash = r1.bitboard[0];
