@@ -49,15 +49,19 @@ class Rubiks3DArray : public  Generic_Rubix_Cube_Solver {
     };
 
     bool isSolved() const override {
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 3; j++) {
-                for (int k = 0; k < 3; k++) {
-                    if (this->cube[i][j][k] == getColorLetter(COLOR(i))) continue;
-                    return false;
+        for (int face = 0; face < 6; face++) {
+            char colorLetter = getColorLetter(COLOR(face)); // Get the expected color for this face
+            for (int row = 0; row < 3; row++) {
+                for (int col = 0; col < 3; col++) {
+                    if (this->cube[face][row][col] != colorLetter) {
+                        return false;
+                    }
                 }
             }
         }
-    };
+        return true; // If no mismatches, the cube is solved
+    }
+
 
     Generic_Rubix_Cube_Solver &u() override {
         this->rotateFace(0);

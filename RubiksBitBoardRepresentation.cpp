@@ -332,10 +332,17 @@ public:
 
         ret |= get5bitCorner(bottom_back_left);
         ret = ret << 5;
-
+        //        cout << top_front_right << " "; print5bitbin(get5bitCorner(top_front_right )); cout  << "\n";
+        //        cout << top_front_left << " "; print5bitbin(get5bitCorner(top_front_left )); cout << "\n";
+        //        cout << top_back_right << " "; print5bitbin(get5bitCorner(top_back_right )); cout << "\n";
+        //        cout << top_back_left  << " "; print5bitbin(get5bitCorner(top_back_left  )); cout << "\n";
+        //        cout << bottom_front_right  << " "; print5bitbin(get5bitCorner(bottom_front_right  )); cout << "\n";
+        //        cout << bottom_front_left << " "; print5bitbin(get5bitCorner(bottom_front_left )); cout << "\n";
+        //        cout << bottom_back_right << " "; print5bitbin(get5bitCorner(bottom_back_right )); cout << "\n";
+        //        cout << bottom_back_left << " "; print5bitbin(get5bitCorner(bottom_back_left )); cout << "\n";
         return ret;
     }
-    //asda
+    
     struct HashBitboard {
         size_t operator()(const RubiksBitBoardRepresentation &r1) const {
             uint64_t final_hash = r1.bitboard[0];
