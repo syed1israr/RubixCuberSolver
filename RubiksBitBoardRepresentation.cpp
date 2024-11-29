@@ -72,6 +72,14 @@ public:
         }
     }
 
+
+    void print(int a){
+        for(int i=4; i>=0; i--){
+            if(a & (1 << i)) cout << 1;
+            else cout << 0;
+        }
+    }
+
     COLOR getColor(FACE face, unsigned row, unsigned col) const override {
         int idx = arr[row][col];
         if ( idx == 8 ) return (COLOR)((int) face);
