@@ -20,6 +20,7 @@ void shuffleCube(Rubiks3DArray& cube) {
     cout << "Shuffle moves: ";
     for (auto move : shuffle_moves) cout << cube.getMove(move) << " ";
     cout << "\n";
+    //
 
 }
 
