@@ -226,7 +226,8 @@ vector<Generic_Rubix_Cube_Solver::MOVE> Generic_Rubix_Cube_Solver::randomShuffle
     return  moves_performed;
 }
 
-string Generic_Rubix_Cube_Solver::getCornerColorString(uint8_t ind)   {
+string Generic_Rubix_Cube_Solver::getCornerColorString(uint8_t ind) const
+{
     string str = "";
 
     switch (ind) {
@@ -292,7 +293,7 @@ string Generic_Rubix_Cube_Solver::getCornerColorString(uint8_t ind)   {
 
 
 
-uint8_t Generic_Rubix_Cube_Solver::getCornerIndex(uint8_t ind)  {
+uint8_t Generic_Rubix_Cube_Solver::getCornerIndex(uint8_t ind) const {
     string corner = getCornerColorString(ind);
     uint8_t result = 0;
     for (auto c: corner) {
@@ -318,7 +319,8 @@ uint8_t Generic_Rubix_Cube_Solver::getCornerIndex(uint8_t ind)  {
     return  result;
 }
 
-uint8_t Generic_Rubix_Cube_Solver::getCornerOrientation(uint8_t ind)  {
+uint8_t Generic_Rubix_Cube_Solver::getCornerOrientation(uint8_t ind) const
+{
     string corner = getCornerColorString(ind);
     string actual_str = "";
     for (auto c: corner) {

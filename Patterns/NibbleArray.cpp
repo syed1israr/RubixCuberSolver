@@ -1,5 +1,4 @@
 
-
 #include "NibbleArray.h"
 
 using namespace std;
@@ -9,6 +8,8 @@ NibbleArray::NibbleArray(const size_t size, const uint8_t val) :
 }
 
 uint8_t NibbleArray::get(const size_t pos) const {
+    std::cout << "pos: " << pos << ", size: " << this->size << std::endl;
+
     size_t i = pos / 2;
     assert(pos <= this->size);
     uint8_t val = this->arr.at(i);

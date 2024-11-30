@@ -1,16 +1,19 @@
 
 #ifndef IDASTART_SOLVER_H
 #define IDASTART_SOLVER_H
-#include "../PatternDatabase.h"
-#include "../Patterns/CornerPatternDatabase.h"
+
 #include "../Generic_Rubix_Cube_Solver.h"
+#include "../Patterns/CornerPatternDatabase.h"
+
+
+
 
 template<typename T ,typename H>
 class  IDAStart_Solver {
-    private:
+public:
     CornerPatternDatabase cornerDB;
     vector<Generic_Rubix_Cube_Solver::MOVE> moves;
-    unordered_map<T,Generic_Rubix_Cube_Solver::MOVE,H>moves_done;
+    unordered_map<T,Generic_Rubix_Cube_Solver::MOVE,H> moves_done;
     unordered_map<T,bool,H>visited;
     struct Node {
         T cube;
@@ -50,12 +53,12 @@ class  IDAStart_Solver {
             if (visited[node.cube]) continue;
 
             visited[node.cube] = true;
-            move_done[node.cube] = RubiksCube::MOVE(p.second);
+            moves_done[node.cube] = Generic_Rubix_Cube_Solver::MOVE(p.second);
 
             if (node.cube.isSolved()) return make_pair(node.cube, bound);
             node.depth++;
             for (int i = 0; i < 18; i++) {
-                auto curr_move = RubiksCube::MOVE(i);
+                auto curr_move = Generic_Rubix_Cube_Solver::MOVE(i);
                 node.cube.move(curr_move);
                 if (!visited[node.cube]) {
                     node.estimate = cornerDB.getNumMoves(node.cube);
@@ -82,17 +85,17 @@ class  IDAStart_Solver {
 
     vector<Generic_Rubix_Cube_Solver::MOVE> solve() {
         int bound = 1;
-        auto p = IDAstar(bound);
+        auto p = IDAStar(bound);
         while (p.second != bound) {
             resetStructure();
             bound = p.second;
-            p = IDAstar(bound);
+            p = IDAStar(bound);
         }
         T solved_cube = p.first;
         assert(solved_cube.isSolved());
         T curr_cube = solved_cube;
         while (!(curr_cube == rubiksCube)) {
-            Generic_Rubix_Cube_Solver::MOVE curr_move = move_done[curr_cube];
+            Generic_Rubix_Cube_Solver::MOVE curr_move = moves_done[curr_cube];
             moves.push_back(curr_move);
             curr_cube.invert(curr_move);
         }

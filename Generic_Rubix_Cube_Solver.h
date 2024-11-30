@@ -71,9 +71,9 @@ public:
     virtual  Generic_Rubix_Cube_Solver &bPrime() = 0;
     virtual  Generic_Rubix_Cube_Solver &b2() = 0;
 
-    string getCornerColorString(uint8_t ind) ;
-    uint8_t getCornerIndex(uint8_t ind) ;
-    uint8_t getCornerOrientation(uint8_t ind) ;
+    string getCornerColorString(uint8_t ind) const ;
+    uint8_t getCornerIndex(uint8_t ind) const  ;
+    uint8_t getCornerOrientation(uint8_t ind) const ;
 };
 
 

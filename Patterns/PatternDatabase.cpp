@@ -46,7 +46,7 @@ void PatternDatabase::toFile(const string &filePath) const {
         ofstream writer(filePath, ios::out | ios::binary | ios::trunc);
 
         if(!writer.is_open())
-                throw "Failed to open the file to write";
+                throw std::runtime_error("Failed to open the file to write");
 
         writer.write(
                 reinterpret_cast<const char*>(this->db.data()),
@@ -58,23 +58,27 @@ void PatternDatabase::toFile(const string &filePath) const {
 }
 
 bool PatternDatabase::fromFile(const string &filePath) {
+        std::cout << "Attempting to load file: " << filePath << std::endl;
+
         ifstream reader(filePath, ios::binary | ios::ate);
-        if(!reader.is_open()) {
+        if (!reader.is_open()) {
+                std::cerr << "Error: Failed to open the file!" << std::endl;
                 return false;
         }
 
         size_t fileSize = reader.tellg();
-        if (fileSize!=this->db.storageSize()) {
+        std::cout << "File size: " << fileSize << std::endl;
+        std::cout << "Expected size: " << this->db.storageSize() << std::endl;
+
+        if (fileSize != this->db.storageSize()) {
                 reader.close();
-                throw "Database Corrupt! Failed to open Reader";
+                throw std::runtime_error("Database Corrupt! Failed to open Reader: " + filePath);
         }
 
         reader.seekg(0, ios::beg);
-        reader.read(
-                reinterpret_cast<char*> (this->db.data()),
-                this->db.storageSize()
-                );
+        reader.read(reinterpret_cast<char*>(this->db.data()), this->db.storageSize());
         reader.close();
+
         this->numItems = this->size;
         return true;
 }
