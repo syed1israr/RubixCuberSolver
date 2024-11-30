@@ -7,3 +7,17 @@
 64	5057	7545101882558743	CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj	277c03867f8c5a46
 44	3960	7545115497830003	CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj	223ab634cb2e2267
 16	437	7546570092044476	build.ninja	82b08570cd943d4c
+53	320	7546586034998642	CMakeFiles/RubixCuberSolver.dir/Patterns/math.cpp.obj	aaf98013b900b05a
+63	4546	7546586035091041	CMakeFiles/RubixCuberSolver.dir/Patterns/NibbleArray.cpp.obj	9a46240ca9ca01c9
+41	4594	7546586034873623	CMakeFiles/RubixCuberSolver.dir/Patterns/PatternDatabase.cpp.obj	210b7e5a284f3fad
+16	4911	7546586034625654	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
+16	4449	7546586193774798	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
+26	3980	7546586538887390	CMakeFiles/RubixCuberSolver.dir/Patterns/CornerPatternDatabase.cpp.obj	30cc22b8ba3c437b
+15	4006	7546586538780443	CMakeFiles/RubixCuberSolver.dir/Patterns/CornerDBMaker.cpp.obj	c7f76016768f36dc
+4006	4496	7546586578689308	RubixCuberSolver.exe	14b7f99dcaf57cf8
+11	3659	7546586787462204	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
+3661	3805	7546586823946049	RubixCuberSolver.exe	14b7f99dcaf57cf8
+8	3296	7546587138923471	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
+3297	3428	7546587171804507	RubixCuberSolver.exe	14b7f99dcaf57cf8
+14	4199	7546587830170445	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
+4200	4413	7546587872032557	RubixCuberSolver.exe	14b7f99dcaf57cf8

@@ -30,16 +30,16 @@ signed main() {
      // else cout << "CUBE2 IS NOT PRESENT\n";
 
      // Shuffle and print moves
-     // vector<Generic_Rubix_Cube_Solver::MOVE> MovestoShuffle = ob1.randomShuffleCube(5);
-     // ob1.print();
-     // cout << "MOVES During Shuffle DFS : ";
-     // for (auto move : MovestoShuffle) {
-     //     cout << ob1.getMove(move) << " ";
-     // }
-     // cout << endl;
-
-     // Solve using DFS
-     // DFSSolver<Rubiks3DArray, Rubiks3DArray::Hash3d> dfs_solver(ob1, 6);
+     vector<Generic_Rubix_Cube_Solver::MOVE> MovestoShuffle = ob1.randomShuffleCube(5);
+     ob1.print();
+     cout << "MOVES During Shuffle DFS : ";
+     for (auto move : MovestoShuffle) {
+         cout << ob1.getMove(move) << " ";
+     }
+     cout << endl;
+     //
+     // // Solve using DFS
+     // DFSSolver<Rubiks3DArray, Rubiks3DArray::Hash3d> dfs_solver(ob1, 10);
      // vector<Generic_Rubix_Cube_Solver::MOVE> MovesToSolve = dfs_solver.solve();
      // dfs_solver.rubikCubeSolver.print();
      // cout << "MOVES TO SOLVE USING DFS : ";
@@ -50,12 +50,12 @@ signed main() {
 
 
     // BFS Solver demonstration
-
-    vector<Rubiks3DArray::MOVE> shuffle_moves = ob1.randomShuffleCube(5);
-    ob1.print();
-    cout << "MOVES During Shuffle  BFS : ";
-    for (auto move : shuffle_moves) cout << ob1.getMove(move) << " ";
-    cout << "\n";
+    //
+    // vector<Rubiks3DArray::MOVE> shuffle_moves = ob1.randomShuffleCube(5);
+    // ob1.print();
+    // cout << "MOVES During Shuffle  BFS : ";
+    // for (auto move : shuffle_moves) cout << ob1.getMove(move) << " ";
+    // cout << "\n";
 
     // BFSSolver<Rubiks3DArray, Rubiks3DArray::Hash3d> bfsSolver(ob1);
     // vector<Rubiks3DArray::MOVE> solve_moves = bfsSolver.solve();
@@ -65,9 +65,9 @@ signed main() {
     // cout << "\n";
 
 
-
-    // IDDFS Solver
-    IDDFS_Solver<Rubiks3DArray,Rubiks3DArray::Hash3d> IDDFS_Solver(ob1,6);
+    //
+    // // IDDFS Solver
+    IDDFS_Solver<Rubiks3DArray,Rubiks3DArray::Hash3d> IDDFS_Solver(ob1,12);
     vector<Generic_Rubix_Cube_Solver::MOVE> IDDFS_moves = IDDFS_Solver.solve();
     IDDFS_Solver.rubiksCube.print();
     cout << " MOVES TO SOLVE USING IDDFS : ";

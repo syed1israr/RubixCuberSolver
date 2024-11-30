@@ -28,7 +28,7 @@ public:
     }
 
     uint32_t rank(const array<uint8_t , K>&perm)const {
-        Array<uint32_t,K>lehmer;
+        array<uint32_t,K>lehmer;
         bitset<N>seen;
         lehmer[0] = perm[0];
         seen[ N - 1 - perm[0] ] = true;

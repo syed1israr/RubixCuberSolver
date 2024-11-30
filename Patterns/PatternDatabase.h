@@ -16,8 +16,8 @@ class PatternDatabase {
     PatternDatabase();
 
     public:
-    PatternDatabase(const size_t size);
-    PatternDatabase(const size_t size, uint8_t init_val);
+    PatternDatabase( const size_t size);
+    PatternDatabase( const size_t size, uint8_t init_val);
 
     virtual uint32_t getDatabaseIndex(const Generic_Rubix_Cube_Solver &cube) const = 0;
 
