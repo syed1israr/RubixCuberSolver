@@ -1,13 +1,9 @@
 # ninja log v6
-15	5435	7546000143256160	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
+22	6256	7546114432188482	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
 78	4722	7545101882700692	CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj	d27d45df91cfcfcc
-5436	5731	7546000197456471	RubixCuberSolver.exe	5d932a6c39c8b866
+6257	6606	7546114494542567	RubixCuberSolver.exe	5d932a6c39c8b866
 32	2459	7545737502782529	CMakeFiles/RubixCuberSolver.dir/Solvers/DFS_Solver.cpp.obj	e26336041c80c297
 30	2573	7545682104298858	CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj	88640ae00e525ae
 64	5057	7545101882558743	CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj	277c03867f8c5a46
 44	3960	7545115497830003	CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj	223ab634cb2e2267
-16	437	7546002139390576	build.ninja	82b08570cd943d4c
-14	4453	7546009034034533	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
-4454	4775	7546009078439370	RubixCuberSolver.exe	5d932a6c39c8b866
-13	3804	7546009534689234	CMakeFiles/RubixCuberSolver.dir/main.cpp.obj	d7fa690d7726899d
-3805	3963	7546009572608638	RubixCuberSolver.exe	5d932a6c39c8b866
+16	437	7546570092044476	build.ninja	82b08570cd943d4c

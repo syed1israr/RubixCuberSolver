@@ -79,6 +79,36 @@ build CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj: CXX_
   OBJECT_DIR = CMakeFiles\RubixCuberSolver.dir
   OBJECT_FILE_DIR = CMakeFiles\RubixCuberSolver.dir
 
+build CMakeFiles/RubixCuberSolver.dir/Patterns/CornerDBMaker.cpp.obj: CXX_COMPILER__RubixCuberSolver_unscanned_Debug C$:/Users/Asus/CLionProjects/RubixCuberSolver/Patterns/CornerDBMaker.cpp || cmake_object_order_depends_target_RubixCuberSolver
+  DEP_FILE = CMakeFiles\RubixCuberSolver.dir\Patterns\CornerDBMaker.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubixCuberSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubixCuberSolver.dir\Patterns
+
+build CMakeFiles/RubixCuberSolver.dir/Patterns/CornerPatternDatabase.cpp.obj: CXX_COMPILER__RubixCuberSolver_unscanned_Debug C$:/Users/Asus/CLionProjects/RubixCuberSolver/Patterns/CornerPatternDatabase.cpp || cmake_object_order_depends_target_RubixCuberSolver
+  DEP_FILE = CMakeFiles\RubixCuberSolver.dir\Patterns\CornerPatternDatabase.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubixCuberSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubixCuberSolver.dir\Patterns
+
+build CMakeFiles/RubixCuberSolver.dir/Patterns/PatternDatabase.cpp.obj: CXX_COMPILER__RubixCuberSolver_unscanned_Debug C$:/Users/Asus/CLionProjects/RubixCuberSolver/Patterns/PatternDatabase.cpp || cmake_object_order_depends_target_RubixCuberSolver
+  DEP_FILE = CMakeFiles\RubixCuberSolver.dir\Patterns\PatternDatabase.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubixCuberSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubixCuberSolver.dir\Patterns
+
+build CMakeFiles/RubixCuberSolver.dir/Patterns/math.cpp.obj: CXX_COMPILER__RubixCuberSolver_unscanned_Debug C$:/Users/Asus/CLionProjects/RubixCuberSolver/Patterns/math.cpp || cmake_object_order_depends_target_RubixCuberSolver
+  DEP_FILE = CMakeFiles\RubixCuberSolver.dir\Patterns\math.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubixCuberSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubixCuberSolver.dir\Patterns
+
+build CMakeFiles/RubixCuberSolver.dir/Patterns/NibbleArray.cpp.obj: CXX_COMPILER__RubixCuberSolver_unscanned_Debug C$:/Users/Asus/CLionProjects/RubixCuberSolver/Patterns/NibbleArray.cpp || cmake_object_order_depends_target_RubixCuberSolver
+  DEP_FILE = CMakeFiles\RubixCuberSolver.dir\Patterns\NibbleArray.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubixCuberSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubixCuberSolver.dir\Patterns
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target RubixCuberSolver
@@ -87,7 +117,7 @@ build CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj: CXX_
 #############################################
 # Link the executable RubixCuberSolver.exe
 
-build RubixCuberSolver.exe: CXX_EXECUTABLE_LINKER__RubixCuberSolver_Debug CMakeFiles/RubixCuberSolver.dir/main.cpp.obj CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj
+build RubixCuberSolver.exe: CXX_EXECUTABLE_LINKER__RubixCuberSolver_Debug CMakeFiles/RubixCuberSolver.dir/main.cpp.obj CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj CMakeFiles/RubixCuberSolver.dir/Patterns/CornerDBMaker.cpp.obj CMakeFiles/RubixCuberSolver.dir/Patterns/CornerPatternDatabase.cpp.obj CMakeFiles/RubixCuberSolver.dir/Patterns/PatternDatabase.cpp.obj CMakeFiles/RubixCuberSolver.dir/Patterns/math.cpp.obj CMakeFiles/RubixCuberSolver.dir/Patterns/NibbleArray.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RubixCuberSolver.dir
