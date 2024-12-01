@@ -5,9 +5,9 @@
 #include "CornerPatternDatabase.h"
 
 
-CornerPatternDatabase::CornerPatternDatabase() : PatternDatabase(200179840){}
+CornerPatternDatabase::CornerPatternDatabase() : PatternDatabase(100179840){}
 
-CornerPatternDatabase::CornerPatternDatabase(uint8_t init_val) : PatternDatabase(200179840,init_val){}
+CornerPatternDatabase::CornerPatternDatabase(uint8_t init_val) : PatternDatabase(100179840,init_val){}
 
 
 uint32_t CornerPatternDatabase::getDatabaseIndex(const Generic_Rubix_Cube_Solver &cube) const {

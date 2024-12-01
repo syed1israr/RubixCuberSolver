@@ -10,8 +10,9 @@
 using namespace std;
 
 // Function to perform a random shuffle of the cube
+int shuffleDepth;
 void shuffleCube(Rubiks3DArray& cube) {
-    int shuffleDepth;
+
     cout << "Enter the depth for shuffling the cube (e.g., 5): ";
     cin >> shuffleDepth;
 
@@ -26,7 +27,7 @@ void shuffleCube(Rubiks3DArray& cube) {
 
 // Function to solve the cube using DFS
 void solveUsingDFS(Rubiks3DArray& cube) {
-    int depth = 3;
+    int depth = shuffleDepth + 2;
     DFSSolver<Rubiks3DArray, Rubiks3DArray::Hash3d> dfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> movesToSolve = dfs_solver.solve();
     dfs_solver.rubikCubeSolver.print();
@@ -39,7 +40,7 @@ void solveUsingDFS(Rubiks3DArray& cube) {
 
 // Function to solve the cube using BFS
 void solveUsingBFS(Rubiks3DArray& cube) {
-    int depth = 4;
+    int depth = shuffleDepth + 3;
     BFSSolver<Rubiks3DArray, Rubiks3DArray::Hash3d> bfsSolver(cube);
     vector<Rubiks3DArray::MOVE> solve_moves = bfsSolver.solve();
     bfsSolver.rubiksCube.print();
@@ -50,7 +51,7 @@ void solveUsingBFS(Rubiks3DArray& cube) {
 
 // Function to solve the cube using IDDFS
 void solveUsingIDDFS(Rubiks3DArray& cube) {
-    int depth = 5;
+    int depth = shuffleDepth + 5;
     IDDFS_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> iddfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> iddfs_moves = iddfs_solver.solve();
     iddfs_solver.rubiksCube.print();
@@ -61,7 +62,7 @@ void solveUsingIDDFS(Rubiks3DArray& cube) {
 
 // Function to solve the cube using IDA* algorithm
 void solveUsingIDAStar(Rubiks3DArray& cube) {
-    int depth = 7;
+    int depth = shuffleDepth + 7;
 
     string path = "C:\\Users\\Asus\\CLionProjects\\RubixCuberSolver\\Dataset2\\cornerDepth5V1.txt";
     IDAStart_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> idaStar(
