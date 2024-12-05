@@ -3,7 +3,7 @@
 #define IDASTART_SOLVER_H
 
 #include "../Generic_Rubix_Cube_Solver.h"
-#include "../Patterns/CornerPatternDatabase.h"
+
 #include "./Dummy.h"
 
 
@@ -12,7 +12,7 @@
 template<typename T ,typename H>
 class  IDAStart_Solver {
 public:
-    Dummy<Bit_representation> cornerDB;
+    Dummy<Rubiks3DArray> cornerDB;
     vector<Generic_Rubix_Cube_Solver::MOVE> moves;
     unordered_map<T,Generic_Rubix_Cube_Solver::MOVE,H> moves_done;
     unordered_map<T,bool,H>visited;
