@@ -22,4 +22,6 @@ add_executable(RubixCuberSolver main.cpp
         "Pattern/Permutation Indexer/Permutation_Indexer.h"
         Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp
         Pattern/CornerPatternDatabase/CornerPatternDatabase.h
+        Pattern/DB_Maker/DB_maker.cpp
+        Pattern/DB_Maker/DB_maker.h
 )
