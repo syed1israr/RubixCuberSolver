@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 #include "./Rubiks3DRepresentation.cpp"
 #include "./Rubiks1DRepresentation.cpp"
+#include "./RubiksBitBoardRepresentation.cpp"
+#include "Pattern/CornerPatternDatabase/CornerPatternDatabase.h"
 #include "./Solvers/DFS_Solver.h"
 #include "./Solvers/BFS_Solver.h"
 #include "Solvers/IDAStart_Solver.h"
@@ -86,11 +88,18 @@ void displayMenu() {
 
 // Main function to drive the program
 int main() {
-
-
-
-
-
+    // CornerPatternDatabase cornerDB;
+    // Bit_representation cube1;
+    // cube1.print();
+    //
+    // cout<<"1.Number of Moves : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
+    // cornerDB.setNumMoves(cube1,5);
+    // cout<<"2.Number of Moves-2 : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
+    // cube1.randomShuffleCube(1);
+    // cube1.print();
+    // cout<<"3.Moves after Shuffle : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
+    // cornerDB.setNumMoves(cube1,6);
+    // cout<<"4.last Number of Moves : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
 
 
     Rubiks3DArray cube;  // Create an instance of your Rubik's Cube representation
@@ -124,4 +133,5 @@ int main() {
         }
     }
     return 0;
+
 }
