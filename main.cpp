@@ -61,17 +61,17 @@ void solveUsingIDDFS(Rubiks3DArray& cube) {
 }
 
 // Function to solve the cube using IDA* algorithm
-void solveUsingIDAStar(Rubiks3DArray& cube) {
-    int depth = shuffleDepth + 7;
-
-    string path = "C:\\Users\\Asus\\CLionProjects\\RubixCuberSolver\\Dataset2\\cornerDepth5V1.txt";
-    IDAStart_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> idaStar(
-        cube, path);
-    vector<Generic_Rubix_Cube_Solver::MOVE> solve_moves = idaStar.solve();
-    cout << "MOVES TO SOLVE USING IDA* with depth " << depth << ": ";
-    for (auto move : solve_moves) cout << cube.getMove(move) << " ";
-    cout << "\n";
-}
+// void solveUsingIDAStar(Rubiks3DArray& cube) {
+//     int depth = shuffleDepth + 7;
+//
+//     string path = "C:\\Users\\Asus\\CLionProjects\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
+//     IDAStart_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> idaStar(
+//         cube, path);
+//     vector<Generic_Rubix_Cube_Solver::MOVE> solve_moves = idaStar.solve();
+//     cout << "MOVES TO SOLVE USING IDA* with depth " << depth << ": ";
+//     for (auto move : solve_moves) cout << cube.getMove(move) << " ";
+//     cout << "\n";
+// }
 
 // Menu function to interact with the user
 void displayMenu() {
@@ -107,9 +107,6 @@ int main() {
             case 4:
                 solveUsingIDDFS(cube);
                 break;
-            case 5:
-                solveUsingIDAStar(cube);
-                break;
             case 0:
                 cout << "Exiting the program...\n";
                 break;
@@ -118,5 +115,19 @@ int main() {
         }
     }
 
+    Bit_representation cube2;
+    cube2.print();
+
+
+    vector<Generic_Rubix_Cube_Solver::MOVE> shuffle_moves = cube2.randomShuffleCube(5);
+    for (auto move: shuffle_moves) cout << cube2.getMove(move) << " ";
+    cout << "\n";
+    cube2.print();
+
+    IDAStart_Solver<Bit_representation, HashBitboard> IDAStart_Solver(cube2);
+    vector<Generic_Rubix_Cube_Solver::MOVE> solve_moves = IDAStart_Solver.solve();
+    for (auto move: solve_moves) cout << cube2.getMove(move) << " ";
+    cout << "\n";
+    IDAStart_Solver.rubiksCube.print();
     return 0;
 }

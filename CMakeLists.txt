@@ -24,4 +24,5 @@ add_executable(RubixCuberSolver main.cpp
         Patterns/NibbleArray.cpp
         Patterns/NibbleArray.h
         Patterns/PermutationIndexer.h
+        Solvers/Dummy.h
 )

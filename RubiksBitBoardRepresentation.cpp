@@ -1,21 +1,22 @@
+
 #include "Generic_Rubix_Cube_Solver.h"
-//
-// Created by Asus on 28-11-2024.
-//
-class RubiksBitBoardRepresentation : public Generic_Rubix_Cube_Solver {
-private:
-    uint64_t solved_side_config[6] = {};
+class Bit_representation : public  Generic_Rubix_Cube_Solver {
+    private:
+    uint64_t solved_side_config[6]{};
 
     int arr[3][3] = {{0, 1, 2},
                      {7, 8, 3},
                      {6, 5, 4}};
-    uint64_t one_8 = (1<<8) - 1 , one_24 = (1<<24) - 1;
-    void rotateFace(int idx) {
-        uint64_t side = bitboard[idx];
-        side = side >> (8*6);
-        bitboard[idx]  = (bitboard[idx] << 16) | (side) ;
+
+    uint64_t one_8 = (1 << 8) - 1, one_24 = (1 << 24) - 1;
+
+    void rotateFace(int ind) {
+        uint64_t side = bitboard[ind];
+        side = side >> (8 * 6);
+        bitboard[ind] = (bitboard[ind] << 16) | (side);
     }
-    void rotateSide(int s1, int s1_1 ,int s1_2 , int s1_3 , int s2 , int s2_1, int s2_2, int s2_3) {
+
+    void rotateSide(int s1, int s1_1, int s1_2, int s1_3, int s2, int s2_1, int s2_2, int s2_3) {
         uint64_t clr1 = (bitboard[s2] & (one_8 << (8 * s2_1))) >> (8 * s2_1);
         uint64_t clr2 = (bitboard[s2] & (one_8 << (8 * s2_2))) >> (8 * s2_2);
         uint64_t clr3 = (bitboard[s2] & (one_8 << (8 * s2_3))) >> (8 * s2_3);
@@ -23,10 +24,10 @@ private:
         bitboard[s1] = (bitboard[s1] & ~(one_8 << (8 * s1_1))) | (clr1 << (8 * s1_1));
         bitboard[s1] = (bitboard[s1] & ~(one_8 << (8 * s1_2))) | (clr2 << (8 * s1_2));
         bitboard[s1] = (bitboard[s1] & ~(one_8 << (8 * s1_3))) | (clr3 << (8 * s1_3));
-
     }
 
-    static int get5bitCorner(string corner) {
+//    Helper to getCorners()
+    int get5bitCorner(string corner) {
         int ret = 0;
         string actual_str;
         for (auto c: corner) {
@@ -59,46 +60,50 @@ private:
         return ret;
     }
 
+//    This function was used for testing / printing
+
+//    void print5bitbin(int a){
+//        for(int i=4; i>=0; i--){
+//            if(a & (1 << i)) cout << 1;
+//            else cout << 0;
+//        }
+//    }
+
 public:
     uint64_t bitboard[6]{};
-    RubiksBitBoardRepresentation() {
-        for (int i = 0; i < 6; i++) {
-            uint64_t clr = 1 << i ;
-            bitboard[i] = 0;
-            for (int j = 0; j < 8; j++) {
-                bitboard[i] !=clr << (8 * j);
+
+    Bit_representation() {
+        for (int side = 0; side < 6; side++) {
+            uint64_t clr = 1 << side;
+            bitboard[side] = 0;
+            for (int faceIdx = 0; faceIdx < 8; faceIdx++) {
+                bitboard[side] |= clr << (8 * faceIdx);
             }
-            solved_side_config[i] = bitboard[i];
-        }
-    }
-
-
-    void print(int a){
-        for(int i=4; i>=0; i--){
-            if(a & (1 << i)) cout << 1;
-            else cout << 0;
+            solved_side_config[side] = bitboard[side];
         }
     }
 
     COLOR getColor(FACE face, unsigned row, unsigned col) const override {
         int idx = arr[row][col];
-        if ( idx == 8 ) return (COLOR)((int) face);
+        if (idx == 8) return (COLOR)((int) face);
 
         uint64_t side = bitboard[(int) face];
-        uint64_t color = (side >> (8*idx)) & one_8;
+        uint64_t color = (side >> (8 * idx)) & one_8;
+
         int bit_pos = 0;
-        while (color!=0) {
+        while (color != 0) {
             color = color >> 1;
             bit_pos++;
         }
         return (COLOR)(bit_pos - 1);
-    };
+    }
+
     bool isSolved() const override {
         for (int i = 0; i < 6; i++) {
-            if (solved_side_config[i]!=bitboard[i]) return false;
+            if (solved_side_config[i] != bitboard[i]) return false;
         }
         return true;
-    };
+    }
 
     Generic_Rubix_Cube_Solver &u() override {
         this->rotateFace(0);
@@ -107,19 +112,25 @@ public:
         bitboard[3] = (bitboard[3] & ~one_24) | (bitboard[4] & one_24);
         bitboard[4] = (bitboard[4] & ~one_24) | (bitboard[1] & one_24);
         bitboard[1] = (bitboard[1] & ~one_24) | temp;
+
         return *this;
-    };
+    }
+
     Generic_Rubix_Cube_Solver &uPrime() override {
         this->u();
         this->u();
         this->u();
+
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &u2() override {
         this->u();
         this->u();
+
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &l() override {
         this->rotateFace(1);
         uint64_t clr1 = (bitboard[2] & (one_8 << (8 * 0))) >> (8 * 0);
@@ -135,19 +146,24 @@ public:
         bitboard[5] = (bitboard[5] & ~(one_8 << (8 * 7))) | (clr3 << (8 * 7));
 
         return *this;
+
+    };
+
+    Generic_Rubix_Cube_Solver &lPrime() override {
+        this->l();
+        this->l();
+        this->l();
+
+        return *this;
     };
 
     Generic_Rubix_Cube_Solver &l2() override {
         this->l();
         this->l();
+
         return *this;
     };
-    Generic_Rubix_Cube_Solver &lPrime() override {
-        this->l();
-        this->l();
-        this->l();
-        return *this;
-    };
+
     Generic_Rubix_Cube_Solver &f() override {
         this->rotateFace(2);
 
@@ -172,9 +188,11 @@ public:
         this->f();
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &f2() override {
         this->f();
         this->f();
+
         return *this;
     };
 
@@ -194,17 +212,22 @@ public:
 
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &rPrime() override {
         this->r();
         this->r();
         this->r();
+
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &r2() override {
         this->r();
         this->r();
+
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &b() override {
         this->rotateFace(4);
 
@@ -222,17 +245,22 @@ public:
 
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &bPrime() override {
         this->b();
         this->b();
         this->b();
+
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &b2() override {
         this->b();
         this->b();
+
         return *this;
     };
+
     Generic_Rubix_Cube_Solver &d() override {
         this->rotateFace(5);
 
@@ -250,31 +278,37 @@ public:
 
         return *this;
     };
-    Generic_Rubix_Cube_Solver &d2() override {
-        this->d();
-        this->d();
-        return *this;
-    };
+
     Generic_Rubix_Cube_Solver &dPrime() override {
         this->d();
         this->d();
         this->d();
+
         return *this;
     };
 
-    bool operator==(const RubiksBitBoardRepresentation &r1) const {
+    Generic_Rubix_Cube_Solver &d2() override {
+        this->d();
+        this->d();
+
+        return *this;
+    }
+
+    bool operator==(const Bit_representation &r1) const {
         for (int i = 0; i < 6; i++) {
             if (bitboard[i] != r1.bitboard[i]) return false;
         }
         return true;
     }
 
-    RubiksBitBoardRepresentation &operator=(const RubiksBitBoardRepresentation &r1) {
+    Bit_representation &operator=(const Bit_representation &r1) {
         for (int i = 0; i < 6; i++) {
             bitboard[i] = r1.bitboard[i];
         }
         return *this;
     }
+
+
     uint64_t getCorners() {
         uint64_t ret = 0;
         string top_front_right = "";
@@ -340,23 +374,27 @@ public:
 
         ret |= get5bitCorner(bottom_back_left);
         ret = ret << 5;
-        //        cout << top_front_right << " "; print5bitbin(get5bitCorner(top_front_right )); cout  << "\n";
-        //        cout << top_front_left << " "; print5bitbin(get5bitCorner(top_front_left )); cout << "\n";
-        //        cout << top_back_right << " "; print5bitbin(get5bitCorner(top_back_right )); cout << "\n";
-        //        cout << top_back_left  << " "; print5bitbin(get5bitCorner(top_back_left  )); cout << "\n";
-        //        cout << bottom_front_right  << " "; print5bitbin(get5bitCorner(bottom_front_right  )); cout << "\n";
-        //        cout << bottom_front_left << " "; print5bitbin(get5bitCorner(bottom_front_left )); cout << "\n";
-        //        cout << bottom_back_right << " "; print5bitbin(get5bitCorner(bottom_back_right )); cout << "\n";
-        //        cout << bottom_back_left << " "; print5bitbin(get5bitCorner(bottom_back_left )); cout << "\n";
+
+//        Following was used for Testing / Printing
+
+//        cout << top_front_right << " "; print5bitbin(get5bitCorner(top_front_right )); cout  << "\n";
+//        cout << top_front_left << " "; print5bitbin(get5bitCorner(top_front_left )); cout << "\n";
+//        cout << top_back_right << " "; print5bitbin(get5bitCorner(top_back_right )); cout << "\n";
+//        cout << top_back_left  << " "; print5bitbin(get5bitCorner(top_back_left  )); cout << "\n";
+//        cout << bottom_front_right  << " "; print5bitbin(get5bitCorner(bottom_front_right  )); cout << "\n";
+//        cout << bottom_front_left << " "; print5bitbin(get5bitCorner(bottom_front_left )); cout << "\n";
+//        cout << bottom_back_right << " "; print5bitbin(get5bitCorner(bottom_back_right )); cout << "\n";
+//        cout << bottom_back_left << " "; print5bitbin(get5bitCorner(bottom_back_left )); cout << "\n";
+
         return ret;
     }
-    
-    struct HashBitboard {
-        size_t operator()(const RubiksBitBoardRepresentation &r1) const {
-            uint64_t final_hash = r1.bitboard[0];
-            for (int i = 1; i < 6; i++) final_hash ^= r1.bitboard[i];
-            return (size_t) final_hash;
-        }
-    };
+
 };
 
+struct HashBitboard {
+    size_t operator()(const Bit_representation &r1) const {
+        uint64_t final_hash = r1.bitboard[0];
+        for (int i = 1; i < 6; i++) final_hash ^= r1.bitboard[i];
+        return (size_t) final_hash;
+    }
+};

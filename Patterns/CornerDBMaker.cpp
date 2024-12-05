@@ -15,8 +15,8 @@ CornerDBMaker::CornerDBMaker(string _fileName, uint8_t init_val) {
 }
 
 bool CornerDBMaker::bfsAndStore() {
-    RubiksBitBoardRepresentation cube;
-    queue<RubiksBitBoardRepresentation> queue;
+    Bit_representation cube;
+    queue<Bit_representation> queue;
     queue.push(cube);
     cornerDB.setNumMoves(cube, 0);
     int curr_depth = 0;
@@ -27,7 +27,7 @@ bool CornerDBMaker::bfsAndStore() {
         if (curr_depth == 9) break; // Stop BFS after 9 levels
 
         for (int counter = 0; counter < n; counter++) {
-            RubiksBitBoardRepresentation cube = queue.front();
+            Bit_representation cube = queue.front();
             queue.pop();
 
             for (int i = 0; i < 18; i++) {
