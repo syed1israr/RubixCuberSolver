@@ -13,7 +13,6 @@ add_executable(RubixCuberSolver main.cpp
         Solvers/BFS_Solver.h
         Solvers/IDDFS_Solver.h
         Solvers/IDAStart_Solver.h
-        Solvers/Dummy.h
         Pattern/nibble_array/nibble.cpp
         Pattern/nibble_array/nibble.h
         Pattern/Database/Pattern_Database.cpp

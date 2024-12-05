@@ -52,7 +52,7 @@ void solveUsingBFS(Rubiks3DArray& cube) {
 
 // Function to solve the cube using IDDFS
 void solveUsingIDDFS(Rubiks3DArray& cube) {
-    int depth = shuffleDepth + 5;
+    int depth = shuffleDepth ;
     IDDFS_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> iddfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> iddfs_moves = iddfs_solver.solve();
     iddfs_solver.rubiksCube.print();
@@ -63,7 +63,7 @@ void solveUsingIDDFS(Rubiks3DArray& cube) {
 
 // Function to solve the cube using IDA* algorithm
 void solveUsingIDAStar(Rubiks3DArray& cube) {
-    int depth = shuffleDepth + 7;
+    int depth = shuffleDepth ;
 
     string path = "C:\\Users\\Asus\\CLionProjects\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
     IDAStart_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> idaStar(
