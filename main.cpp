@@ -65,7 +65,7 @@ void solveUsingIDDFS(Rubiks3DArray& cube) {
 void solveUsingIDAStar(Rubiks3DArray& cube) {
     int depth = shuffleDepth ;
 
-    string path = "C:\\Users\\Asus\\CLionProjects\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
+    string path = "C:\\Users\\Asus\\OneDrive\\Desktop\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
     IDAStart_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> idaStar(
         cube,path);
     vector<Generic_Rubix_Cube_Solver::MOVE> solve_moves = idaStar.solve();
