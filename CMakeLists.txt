@@ -14,4 +14,13 @@ add_executable(RubixCuberSolver main.cpp
         Solvers/IDDFS_Solver.h
         Solvers/IDAStart_Solver.h
         Solvers/Dummy.h
+        Pattern/nibble_array/nibble.cpp
+        Pattern/nibble_array/nibble.h
+        Pattern/Database/Pattern_Database.cpp
+        Pattern/Database/Pattern_Database.h
+        "Pattern/Permutation Indexer/Math.cpp"
+        "Pattern/Permutation Indexer/Math.h"
+        "Pattern/Permutation Indexer/Permutation_Indexer.h"
+        Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp
+        Pattern/CornerPatternDatabase/CornerPatternDatabase.h
 )
