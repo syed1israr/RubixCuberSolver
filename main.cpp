@@ -67,7 +67,7 @@ void solveUsingIDAStar(Rubiks3DArray& cube) {
 
     string path = "C:\\Users\\Asus\\CLionProjects\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
     IDAStart_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> idaStar(
-        cube);
+        cube,path);
     vector<Generic_Rubix_Cube_Solver::MOVE> solve_moves = idaStar.solve();
     cout << "MOVES TO SOLVE USING IDA* with depth " << depth << ": ";
     for (auto move : solve_moves) cout << cube.getMove(move) << " ";

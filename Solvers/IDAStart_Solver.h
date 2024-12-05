@@ -4,15 +4,12 @@
 
 #include "../Generic_Rubix_Cube_Solver.h"
 
-#include "./Dummy.h"
-
-
 
 
 template<typename T ,typename H>
 class  IDAStart_Solver {
 public:
-    Dummy<Rubiks3DArray> cornerDB;
+    CornerPatternDatabase cornerDB;
     vector<Generic_Rubix_Cube_Solver::MOVE> moves;
     unordered_map<T,Generic_Rubix_Cube_Solver::MOVE,H> moves_done;
     unordered_map<T,bool,H>visited;
@@ -43,7 +40,7 @@ public:
 
     pair<T,int>IDAStar(int bound) {
         priority_queue<pair<Node, int>, vector<pair<Node, int>>, compareCube> pq;
-        Node start = Node(rubiksCube, 0, cornerDB.getEstimate(rubiksCube));
+        Node start = Node(rubiksCube, 0, cornerDB.getNumMoves(rubiksCube));
         pq.push(make_pair(start, 0));
         int next_bound = 100;
         while (!pq.empty()) {
@@ -62,7 +59,7 @@ public:
                 auto curr_move = Generic_Rubix_Cube_Solver::MOVE(i);
                 node.cube.move(curr_move);
                 if (!visited[node.cube]) {
-                    node.estimate = cornerDB.getEstimate(node.cube);
+                    node.estimate = cornerDB.getNumMoves(node.cube);
                     if (node.estimate + node.depth > bound) {
                         next_bound = min(next_bound, node.estimate + node.depth);
                     } else {
@@ -79,9 +76,9 @@ public:
     public:
     T rubiksCube;
 
-    IDAStart_Solver(T _rubiksCube ) { // string filename
+    IDAStart_Solver(T _rubiksCube , string filename ) { //
         rubiksCube = _rubiksCube;
-        // cornerDB.fromFile(filename);
+        cornerDB.fromFile(filename);
     }
 
     vector<Generic_Rubix_Cube_Solver::MOVE> solve() {
