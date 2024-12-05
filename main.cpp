@@ -10,28 +10,30 @@
 
 using namespace std;
 
-// Function to perform a random shuffle of the cube
 int shuffleDepth;
-void shuffleCube(Rubiks3DArray& cube) {
 
+void shuffleCube(Bit_representation& cube) {
     cout << "Enter the depth for shuffling the cube (e.g., 5): ";
     cin >> shuffleDepth;
 
     vector<Generic_Rubix_Cube_Solver::MOVE> shuffle_moves = cube.randomShuffleCube(shuffleDepth);
     cube.print();
-    cout << "Shuffle moves: ";
-    for (auto move : shuffle_moves) cout << cube.getMove(move) << " ";
-    cout << "\n";
-    //
 
+    cout << "Shuffle moves: ";
+    for (auto move : shuffle_moves) {
+        cout << cube.getMove(move) << " ";
+    }
+    cout << "\n";
 }
 
-// Function to solve the cube using DFS
-void solveUsingDFS(Rubiks3DArray& cube) {
+
+void solveUsingDFS(Bit_representation& cube) {
     int depth = shuffleDepth + 2;
-    DFSSolver<Rubiks3DArray, Rubiks3DArray::Hash3d> dfs_solver(cube, depth);
+    DFSSolver<Bit_representation, HashBitboard> dfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> movesToSolve = dfs_solver.solve();
+
     dfs_solver.rubikCubeSolver.print();
+
     cout << "MOVES TO SOLVE USING DFS with depth " << depth << ": ";
     for (auto move : movesToSolve) {
         cout << cube.getMove(move) << " ";
@@ -39,42 +41,50 @@ void solveUsingDFS(Rubiks3DArray& cube) {
     cout << endl;
 }
 
-// Function to solve the cube using BFS
-void solveUsingBFS(Rubiks3DArray& cube) {
+
+void solveUsingBFS(Bit_representation& cube) {
     int depth = shuffleDepth + 3;
-    BFSSolver<Rubiks3DArray, Rubiks3DArray::Hash3d> bfsSolver(cube);
+    BFSSolver<Bit_representation, HashBitboard> bfsSolver(cube);
     vector<Rubiks3DArray::MOVE> solve_moves = bfsSolver.solve();
+
     bfsSolver.rubiksCube.print();
+
     cout << "MOVES TO SOLVE USING BFS with depth " << depth << ": ";
-    for (auto move : solve_moves) cout << cube.getMove(move) << " ";
+    for (auto move : solve_moves) {
+        cout << cube.getMove(move) << " ";
+    }
     cout << "\n";
 }
 
-// Function to solve the cube using IDDFS
-void solveUsingIDDFS(Rubiks3DArray& cube) {
-    int depth = shuffleDepth ;
-    IDDFS_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> iddfs_solver(cube, depth);
+void solveUsingIDDFS(Bit_representation& cube) {
+    int depth = shuffleDepth;
+    IDDFS_Solver<Bit_representation, HashBitboard> iddfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> iddfs_moves = iddfs_solver.solve();
+
     iddfs_solver.rubiksCube.print();
+
     cout << "MOVES TO SOLVE USING IDDFS with depth " << depth << ": ";
-    for (auto move : iddfs_moves) cout << cube.getMove(move) << " ";
+    for (auto move : iddfs_moves) {
+        cout << cube.getMove(move) << " ";
+    }
     cout << "\n";
 }
 
-// Function to solve the cube using IDA* algorithm
-void solveUsingIDAStar(Rubiks3DArray& cube) {
-    int depth = shuffleDepth ;
+
+void solveUsingIDAStar(Bit_representation& cube) {
+    int depth = shuffleDepth;
 
     string path = "C:\\Users\\Asus\\OneDrive\\Desktop\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
-    IDAStart_Solver<Rubiks3DArray, Rubiks3DArray::Hash3d> idaStar(
-        cube,path);
+    IDAStart_Solver<Bit_representation, HashBitboard> idaStar(cube, path);
     vector<Generic_Rubix_Cube_Solver::MOVE> solve_moves = idaStar.solve();
+
     cout << "MOVES TO SOLVE USING IDA* with depth " << depth << ": ";
-    for (auto move : solve_moves) cout << cube.getMove(move) << " ";
+    for (auto move : solve_moves) {
+        cout << cube.getMove(move) << " ";
+    }
     cout << "\n";
 }
 
-// Menu function to interact with the user
 void displayMenu() {
     cout << "Choose an option: \n";
     cout << "1. Shuffle Cube\n";
@@ -86,27 +96,15 @@ void displayMenu() {
     cout << "Enter your choice: ";
 }
 
-// Main function to drive the program
+
 int main() {
-    // CornerPatternDatabase cornerDB;
-    // Bit_representation cube1;
-    // cube1.print();
-    //
-    // cout<<"1.Number of Moves : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
-    // cornerDB.setNumMoves(cube1,5);
-    // cout<<"2.Number of Moves-2 : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
-    // cube1.randomShuffleCube(1);
-    // cube1.print();
-    // cout<<"3.Moves after Shuffle : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
-    // cornerDB.setNumMoves(cube1,6);
-    // cout<<"4.last Number of Moves : "<<(int)cornerDB.getNumMoves(cube1)<<"\n";
 
 
-    Rubiks3DArray cube;  // Create an instance of your Rubik's Cube representation
+    Bit_representation cube;
     int choice = -1;
 
     while (choice != 0) {
-        displayMenu();  // Show the menu to the user
+        displayMenu();
         cin >> choice;
 
         switch (choice) {
@@ -124,7 +122,7 @@ int main() {
                 break;
             case 5:
                 solveUsingIDAStar(cube);
-            break;
+                break;
             case 0:
                 cout << "Exiting the program...\n";
                 break;
@@ -132,6 +130,6 @@ int main() {
                 cout << "Invalid choice. Please try again.\n";
         }
     }
-    return 0;
 
+    return 0;
 }
