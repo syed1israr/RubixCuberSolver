@@ -1,6 +1,6 @@
 CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj: \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Permutation\ Indexer\Math.cpp \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Permutation\ Indexer\Math.h \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Permutation\ Indexer\Math.cpp \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Permutation\ Indexer\Math.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \

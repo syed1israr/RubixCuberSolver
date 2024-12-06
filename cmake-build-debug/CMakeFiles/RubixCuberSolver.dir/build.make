@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver
+CMAKE_SOURCE_DIR = C:\Users\Asus\CLionProjects\RubixCuberSolver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RubixCuberSolver.dir/depend.make
@@ -69,144 +69,144 @@ include CMakeFiles/RubixCuberSolver.dir/progress.make
 include CMakeFiles/RubixCuberSolver.dir/flags.make
 
 CMakeFiles/RubixCuberSolver.dir/main.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/main.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/main.cpp
+CMakeFiles/RubixCuberSolver.dir/main.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/main.cpp
 CMakeFiles/RubixCuberSolver.dir/main.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RubixCuberSolver.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/main.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\main.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\main.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RubixCuberSolver.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/main.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\main.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\main.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\main.cpp
 
 CMakeFiles/RubixCuberSolver.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\main.cpp > CMakeFiles\RubixCuberSolver.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\main.cpp > CMakeFiles\RubixCuberSolver.dir\main.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\main.cpp -o CMakeFiles\RubixCuberSolver.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\main.cpp -o CMakeFiles\RubixCuberSolver.dir\main.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Generic_Rubix_Cube_Solver.cpp
+CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Generic_Rubix_Cube_Solver.cpp
 CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Generic_Rubix_Cube_Solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\Generic_Rubix_Cube_Solver.cpp
 
 CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Generic_Rubix_Cube_Solver.cpp > CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\Generic_Rubix_Cube_Solver.cpp > CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Generic_Rubix_Cube_Solver.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Generic_Rubix_Cube_Solver.cpp -o CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\Generic_Rubix_Cube_Solver.cpp -o CMakeFiles\RubixCuberSolver.dir\Generic_Rubix_Cube_Solver.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Rubiks3DRepresentation.cpp
+CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Rubiks3DRepresentation.cpp
 CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Rubiks3DRepresentation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\Rubiks3DRepresentation.cpp
 
 CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Rubiks3DRepresentation.cpp > CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\Rubiks3DRepresentation.cpp > CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Rubiks3DRepresentation.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Rubiks3DRepresentation.cpp -o CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\Rubiks3DRepresentation.cpp -o CMakeFiles\RubixCuberSolver.dir\Rubiks3DRepresentation.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Rubiks1DRepresentation.cpp
+CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Rubiks1DRepresentation.cpp
 CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Rubiks1DRepresentation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\Rubiks1DRepresentation.cpp
 
 CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Rubiks1DRepresentation.cpp > CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\Rubiks1DRepresentation.cpp > CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Rubiks1DRepresentation.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Rubiks1DRepresentation.cpp -o CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\Rubiks1DRepresentation.cpp -o CMakeFiles\RubixCuberSolver.dir\Rubiks1DRepresentation.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/RubiksBitBoardRepresentation.cpp
+CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/RubiksBitBoardRepresentation.cpp
 CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\RubiksBitBoardRepresentation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\RubiksBitBoardRepresentation.cpp
 
 CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\RubiksBitBoardRepresentation.cpp > CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\RubiksBitBoardRepresentation.cpp > CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/RubiksBitBoardRepresentation.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\RubiksBitBoardRepresentation.cpp -o CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\RubiksBitBoardRepresentation.cpp -o CMakeFiles\RubixCuberSolver.dir\RubiksBitBoardRepresentation.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/nibble_array/nibble.cpp
+CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/nibble_array/nibble.cpp
 CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\nibble_array\nibble.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\nibble_array\nibble.cpp
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\nibble_array\nibble.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\nibble_array\nibble.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\nibble_array\nibble.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\nibble_array\nibble.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\nibble_array\nibble.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/Database/Pattern_Database.cpp
+CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/Database/Pattern_Database.cpp
 CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Database\Pattern_Database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Database\Pattern_Database.cpp
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Database\Pattern_Database.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Database\Pattern_Database.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Pattern/Database/Pattern_Database.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Database\Pattern_Database.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Database\Pattern_Database.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\Database\Pattern_Database.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/Permutation\ Indexer/Math.cpp
+CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/Permutation\ Indexer/Math.cpp
 CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.obj -c "C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Permutation Indexer\Math.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.obj -c "C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Permutation Indexer\Math.cpp"
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Permutation Indexer\Math.cpp" > CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Permutation Indexer\Math.cpp" > CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Pattern/Permutation_Indexer/Math.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\Permutation Indexer\Math.cpp" -o CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\Permutation Indexer\Math.cpp" -o CMakeFiles\RubixCuberSolver.dir\Pattern\Permutation_Indexer\Math.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp
+CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp
 CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Pattern/CornerPatternDatabase/CornerPatternDatabase.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\CornerPatternDatabase\CornerPatternDatabase.cpp.s
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj: CMakeFiles/RubixCuberSolver.dir/flags.make
-CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj: C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/DB_Maker/DB_maker.cpp
+CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj: C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/DB_Maker/DB_maker.cpp
 CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj: CMakeFiles/RubixCuberSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.obj -c C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\DB_Maker\DB_maker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.obj -MF CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.obj.d -o CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.obj -c C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\DB_Maker\DB_maker.cpp
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\DB_Maker\DB_maker.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\DB_Maker\DB_maker.cpp > CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.i
 
 CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RubixCuberSolver.dir/Pattern/DB_Maker/DB_maker.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\DB_Maker\DB_maker.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\DB_Maker\DB_maker.cpp -o CMakeFiles\RubixCuberSolver.dir\Pattern\DB_Maker\DB_maker.cpp.s
 
 # Object files for target RubixCuberSolver
 RubixCuberSolver_OBJECTS = \
@@ -238,7 +238,7 @@ RubixCuberSolver.exe: CMakeFiles/RubixCuberSolver.dir/build.make
 RubixCuberSolver.exe: CMakeFiles/RubixCuberSolver.dir/linkLibs.rsp
 RubixCuberSolver.exe: CMakeFiles/RubixCuberSolver.dir/objects1.rsp
 RubixCuberSolver.exe: CMakeFiles/RubixCuberSolver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable RubixCuberSolver.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable RubixCuberSolver.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RubixCuberSolver.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -250,6 +250,6 @@ CMakeFiles/RubixCuberSolver.dir/clean:
 .PHONY : CMakeFiles/RubixCuberSolver.dir/clean
 
 CMakeFiles/RubixCuberSolver.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\cmake-build-debug\CMakeFiles\RubixCuberSolver.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Asus\CLionProjects\RubixCuberSolver C:\Users\Asus\CLionProjects\RubixCuberSolver C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug C:\Users\Asus\CLionProjects\RubixCuberSolver\cmake-build-debug\CMakeFiles\RubixCuberSolver.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RubixCuberSolver.dir/depend
 

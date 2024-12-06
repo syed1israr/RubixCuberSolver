@@ -1,5 +1,5 @@
 CMakeFiles/RubixCuberSolver.dir/main.cpp.obj: \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\main.cpp \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\main.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/stdc++.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -361,21 +361,21 @@ CMakeFiles/RubixCuberSolver.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/barrier \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/latch \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/syncstream \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Rubiks3DRepresentation.cpp \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Rubiks1DRepresentation.cpp \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/RubiksBitBoardRepresentation.cpp \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern/CornerPatternDatabase/CornerPatternDatabase.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/Database/Pattern_Database.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/nibble_array/nibble.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/Permutation\ Indexer/Permutation_Indexer.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Pattern/Permutation\ Indexer/Math.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Solvers/DFS_Solver.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Solvers/BFS_Solver.h \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Solvers/IDAStart_Solver.h \
- C:/Users/Asus/OneDrive/Desktop/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Solvers/IDDFS_Solver.h \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Solvers/DFS_Solver.h
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Rubiks3DRepresentation.cpp \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Rubiks1DRepresentation.cpp \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/RubiksBitBoardRepresentation.cpp \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern/CornerPatternDatabase/CornerPatternDatabase.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/Database/Pattern_Database.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/nibble_array/nibble.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/Permutation\ Indexer/Permutation_Indexer.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Pattern/Permutation\ Indexer/Math.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Solvers/DFS_Solver.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Solvers/BFS_Solver.h \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Solvers/IDAStart_Solver.h \
+ C:/Users/Asus/CLionProjects/RubixCuberSolver/Generic_Rubix_Cube_Solver.h \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Solvers/IDDFS_Solver.h \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Solvers/DFS_Solver.h

@@ -12,7 +12,7 @@ using namespace std;
 
 int shuffleDepth;
 
-void shuffleCube(Bit_representation& cube) {
+void shuffleCube(Bit_representation &cube) {
     cout << "Enter the depth for shuffling the cube (e.g., 5): ";
     cin >> shuffleDepth;
 
@@ -26,8 +26,45 @@ void shuffleCube(Bit_representation& cube) {
     cout << "\n";
 }
 
+void jumbleYourCube(Bit_representation &cube) {
+    cout << "Enter your custom moves as space-separated values (e.g., f u rPrime). Enter 'done' to finish: \n";
+    vector<string> operations;
+    string input;
 
-void solveUsingDFS(Bit_representation& cube) {
+    while (cin >> input && input != "done") {
+        operations.push_back(input);
+    }
+
+    shuffleDepth = operations.size();
+    for (const auto &move : operations) {
+        if (move == "f") cube.f();
+        else if (move == "fPrime") cube.fPrime();
+        else if (move == "f2") cube.f2();
+        else if (move == "u") cube.u();
+        else if (move == "uPrime") cube.uPrime();
+        else if (move == "u2") cube.u2();
+        else if (move == "l") cube.l();
+        else if (move == "lPrime") cube.lPrime();
+        else if (move == "l2") cube.l2();
+        else if (move == "r") cube.r();
+        else if (move == "rPrime") cube.rPrime();
+        else if (move == "r2") cube.r2();
+        else if (move == "d") cube.d();
+        else if (move == "dPrime") cube.dPrime();
+        else if (move == "d2") cube.d2();
+        else if (move == "b") cube.b();
+        else if (move == "bPrime") cube.bPrime();
+        else if (move == "b2") cube.b2();
+        else {
+            cout << "Invalid move: " << move << ". Skipping...\n";
+        }
+    }
+
+    cube.print();
+    cout << "Cube jumbled successfully with " << shuffleDepth << " moves!\n";
+}
+
+void solveUsingDFS(Bit_representation &cube) {
     int depth = shuffleDepth + 2;
     DFSSolver<Bit_representation, HashBitboard> dfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> movesToSolve = dfs_solver.solve();
@@ -41,8 +78,7 @@ void solveUsingDFS(Bit_representation& cube) {
     cout << endl;
 }
 
-
-void solveUsingBFS(Bit_representation& cube) {
+void solveUsingBFS(Bit_representation &cube) {
     int depth = shuffleDepth + 3;
     BFSSolver<Bit_representation, HashBitboard> bfsSolver(cube);
     vector<Rubiks3DArray::MOVE> solve_moves = bfsSolver.solve();
@@ -56,7 +92,7 @@ void solveUsingBFS(Bit_representation& cube) {
     cout << "\n";
 }
 
-void solveUsingIDDFS(Bit_representation& cube) {
+void solveUsingIDDFS(Bit_representation &cube) {
     int depth = shuffleDepth;
     IDDFS_Solver<Bit_representation, HashBitboard> iddfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> iddfs_moves = iddfs_solver.solve();
@@ -70,8 +106,7 @@ void solveUsingIDDFS(Bit_representation& cube) {
     cout << "\n";
 }
 
-
-void solveUsingIDAStar(Bit_representation& cube) {
+void solveUsingIDAStar(Bit_representation &cube) {
     int depth = shuffleDepth;
 
     string path = "C:\\Users\\Asus\\OneDrive\\Desktop\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
@@ -88,18 +123,16 @@ void solveUsingIDAStar(Bit_representation& cube) {
 void displayMenu() {
     cout << "Choose an option: \n";
     cout << "1. Shuffle Cube\n";
-    cout << "2. Solve Using DFS\n";
-    cout << "3. Solve Using BFS\n";
-    cout << "4. Solve Using IDDFS\n";
-    cout << "5. Solve Using IDA*\n";
+    cout << "2. Jumble Your Cube\n";
+    cout << "3. Solve Using DFS\n";
+    cout << "4. Solve Using BFS\n";
+    cout << "5. Solve Using IDDFS\n";
+    cout << "6. Solve Using IDA*\n";
     cout << "0. Exit\n";
     cout << "Enter your choice: ";
 }
 
-
 int main() {
-
-
     Bit_representation cube;
     int choice = -1;
 
@@ -112,15 +145,18 @@ int main() {
                 shuffleCube(cube);
                 break;
             case 2:
-                solveUsingDFS(cube);
+                jumbleYourCube(cube);
                 break;
             case 3:
-                solveUsingBFS(cube);
+                solveUsingDFS(cube);
                 break;
             case 4:
-                solveUsingIDDFS(cube);
+                solveUsingBFS(cube);
                 break;
             case 5:
+                solveUsingIDDFS(cube);
+                break;
+            case 6:
                 solveUsingIDAStar(cube);
                 break;
             case 0:

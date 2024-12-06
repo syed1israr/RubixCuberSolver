@@ -1,6 +1,6 @@
 CMakeFiles/RubixCuberSolver.dir/Pattern/nibble_array/nibble.cpp.obj: \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\nibble_array\nibble.cpp \
- C:\Users\Asus\OneDrive\Desktop\RubixCuberSolver\Pattern\nibble_array\nibble.h \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\nibble_array\nibble.cpp \
+ C:\Users\Asus\CLionProjects\RubixCuberSolver\Pattern\nibble_array\nibble.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/stdc++.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Program\ Files/JetBrains/CLion\ 2024.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
