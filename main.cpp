@@ -66,8 +66,13 @@ void jumbleYourCube(Bit_representation &cube) {
 
 void solveUsingDFS(Bit_representation &cube) {
     int depth = shuffleDepth + 2;
+    auto start = chrono::high_resolution_clock::now();
+
     DFSSolver<Bit_representation, HashBitboard> dfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> movesToSolve = dfs_solver.solve();
+
+    auto end = chrono::high_resolution_clock::now();
+    chrono::duration<double> elapsed = end - start;
 
     dfs_solver.rubikCubeSolver.print();
 
@@ -75,13 +80,18 @@ void solveUsingDFS(Bit_representation &cube) {
     for (auto move : movesToSolve) {
         cout << cube.getMove(move) << " ";
     }
-    cout << endl;
+    cout << "\nTime taken: " << elapsed.count() << " seconds\n";
 }
 
 void solveUsingBFS(Bit_representation &cube) {
     int depth = shuffleDepth + 3;
+    auto start = chrono::high_resolution_clock::now();
+
     BFSSolver<Bit_representation, HashBitboard> bfsSolver(cube);
     vector<Rubiks3DArray::MOVE> solve_moves = bfsSolver.solve();
+
+    auto end = chrono::high_resolution_clock::now();
+    chrono::duration<double> elapsed = end - start;
 
     bfsSolver.rubiksCube.print();
 
@@ -89,13 +99,18 @@ void solveUsingBFS(Bit_representation &cube) {
     for (auto move : solve_moves) {
         cout << cube.getMove(move) << " ";
     }
-    cout << "\n";
+    cout << "\nTime taken: " << elapsed.count() << " seconds\n";
 }
 
 void solveUsingIDDFS(Bit_representation &cube) {
     int depth = shuffleDepth;
+    auto start = chrono::high_resolution_clock::now();
+
     IDDFS_Solver<Bit_representation, HashBitboard> iddfs_solver(cube, depth);
     vector<Generic_Rubix_Cube_Solver::MOVE> iddfs_moves = iddfs_solver.solve();
+
+    auto end = chrono::high_resolution_clock::now();
+    chrono::duration<double> elapsed = end - start;
 
     iddfs_solver.rubiksCube.print();
 
@@ -103,21 +118,26 @@ void solveUsingIDDFS(Bit_representation &cube) {
     for (auto move : iddfs_moves) {
         cout << cube.getMove(move) << " ";
     }
-    cout << "\n";
+    cout << "\nTime taken: " << elapsed.count() << " seconds\n";
 }
 
 void solveUsingIDAStar(Bit_representation &cube) {
     int depth = shuffleDepth;
-
     string path = "C:\\Users\\Asus\\OneDrive\\Desktop\\RubixCuberSolver\\Dataset\\cornerDepth5V1.txt";
+
+    auto start = chrono::high_resolution_clock::now();
+
     IDAStart_Solver<Bit_representation, HashBitboard> idaStar(cube, path);
     vector<Generic_Rubix_Cube_Solver::MOVE> solve_moves = idaStar.solve();
+
+    auto end = chrono::high_resolution_clock::now();
+    chrono::duration<double> elapsed = end - start;
 
     cout << "MOVES TO SOLVE USING IDA* with depth " << depth << ": ";
     for (auto move : solve_moves) {
         cout << cube.getMove(move) << " ";
     }
-    cout << "\n";
+    cout << "\nTime taken: " << elapsed.count() << " seconds\n";
 }
 
 void displayMenu() {
