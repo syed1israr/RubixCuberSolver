@@ -51,23 +51,6 @@ RubixCuberSolver
 - A C++ compiler like g++ or clang++
 - CMake for building the project
 
-### Build Instructions
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd RubixCuberSolver
-   ```
-2. Create a build directory and compile:
-   ```bash
-   mkdir build
-   cd build
-   cmake ..
-   make
-   ```
-3. Run the executable:
-   ```bash
-   ./RubixCuberSolver
-   ```
 
 ## Usage
 When you run the program, a menu is displayed with the following options:
